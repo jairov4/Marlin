@@ -1,6 +1,6 @@
 /**
  * Marlin 3D Printer Firmware
- * Copyright (c) 2019 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
  * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
@@ -31,6 +31,7 @@
 
 #define BOARD_INFO_NAME   "MKS SGen"
 #define BOARD_WEBSITE_URL "github.com/makerbase-mks/MKS-SGEN"
+#define MKS_HAS_LPC1769
 
 #include "../lpc1768/pins_MKS_SBASE.h"
 
@@ -61,7 +62,7 @@
   #define Z_SERIAL_RX_PIN  P2_11   // J8-4
   #define E0_SERIAL_TX_PIN P2_13   // J8-5
   #define E0_SERIAL_RX_PIN P2_13   // J8-5
-  
+
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE 19200
 #endif
